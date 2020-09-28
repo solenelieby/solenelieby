@@ -1,37 +1,95 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Wououuu</title>
+		<style>
+		/**********************/
+		/* Flex */
+		/**********************/
+			.coteACote{
+				display: flex;
+				border: 1px solid black;
+				margin: 2px;
+			}
+			.boite{
+				border: 1px solid black;
+				margin: 5px;
+				padding: 5px;
+				background: #09C;
+				color: #FFF;
+			}
 
-You can use the [editor on GitHub](https://github.com/solenelieby/solenelieby/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+			.partie2{
+				justify-content: space-between;
+			}
+			.partie3{
+				flex: 1;
+			}
+			.partie4{
+				margin-left: auto;
+			}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+		/**********************/
+		/* Grid */
+		/**********************/
+			.grid{
+				border: 1px solid black;
+				background: #0C9;
+				margin-top: 50px;
 
-### Markdown
+				display: grid;
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+				/* grid-template-columns: 50% 50%; */ /* Question 12 */
 
-```markdown
-Syntax highlighted code block
+				grid-template-columns: 1fr 1fr; /* Question 13 */
 
-# Header 1
-## Header 2
-### Header 3
+				/* grid-template-columns: 1fr 1fr 1fr; */ /* Question 14 */
+			}
+		</style>
+	</head>
+	<body>
 
-- Bulleted
-- List
+<!-- ------------------------------- -->
+<!-- Flexbox -->
+<!-- ------------------------------- -->
+		<div class="coteACote">
+			<div class="boite">bla bla bla</div>
+			<div class="boite">bla bla bla</div>
+			<div class="boite">bla bla bla</div>
+		</div>
+		<div class="coteACote partie2">
+			<div class="boite">bla bla bla</div>
+			<div class="boite">bla bla bla</div>
+			<div class="boite">bla bla bla</div>
+		</div>
+		<div class="coteACote">
+			<div class="boite partie3">bla bla bla</div>
+			<div class="boite partie3">bla bla bla</div>
+			<div class="boite partie3">bla bla bla</div>
+		</div>
+		<div class="coteACote">
+			<div class="boite">bla bla bla</div>
+			<div class="boite">bla bla bla</div>
+			<div class="boite partie4">bla bla bla</div>
+		</div>
 
-1. Numbered
-2. List
+<!-- ------------------------------- -->
+<!-- Grid -->
+<!-- ------------------------------- -->		
+		<div class="grid">
+			<div class="boite">bla bla bla</div>
+			<div class="boite">bla bla bla</div>
+			<div class="boite">bla bla bla</div>
+			<div class="boite">bla bla bla</div>
+			<div class="boite">bla bla bla</div>
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/solenelieby/solenelieby/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+			<div class="boite">bla bla bla</div>
+			<div class="boite">bla bla bla</div>
+			<div class="boite">bla bla bla</div>
+			<div class="boite">bla bla bla</div>
+			<div class="boite">bla bla bla</div>
+		</div>
+	</body>
+</html>
